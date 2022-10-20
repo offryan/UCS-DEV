@@ -1,0 +1,26 @@
+#a{ background-color: red; 
+}
+#b{ background-color: rgb(167, 113, 221);
+}
+#c{ background-color: blue;
+}
+
+#a, #b, #c{
+    height: 100px;
+}
+
+#linha{
+    background-color: yellow; 
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#a, #c{
+    flex-grow: 1;
+}
+
+#b{
+    flex-grow: 2;
+}

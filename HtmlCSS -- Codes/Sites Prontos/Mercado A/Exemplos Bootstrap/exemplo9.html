@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Exemplo 9</title>
+    <meta charset="utf-8">
+    <!-- garantir o toque de zoom em dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap_css/bootstrap.min.css">
+    <style>
+        .margem15px {
+            margin-left: 15px;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Exemplo 9</h1>
+        <h3>Imagens</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <p>Uma imagem que usa a classe img-rounded e img-responsive</p>
+                <img src="img/pulpitrock.jpg" alt="Pulpit Rock" class="img-rounded  img-responsive">
+            </div>
+            <div class="col-md-3">
+                <p>Uma imagem usando o estilo img-rounded e img-thumbnail</p>
+                <img src="img/osbaloes.jpg" alt="Pulpit Rock" class="img-thumbnail img-responsive">
+            </div>
+            <div class="col-md-3">
+                <p>Uma imagem usando o estilo img-responsive</p>
+                <img src="img/moustiers-sainte-marie.jpg" alt="Moustiers Sainte Marie" class="img-responsive">
+            </div>
+            <div class="col-md-3">
+                    <p>Uma imagem usando o estilo img-circle e img-responsive</p>
+                    <img src="img/cinqueterre.jpg" alt="Cinque Terre" class="img-circle img-responsive">
+            </div>
+        </div>
+    </div>
+
+    <br /><br />
+
+    <div class="margem15px">
+        <p>
+            A seguir, uma imagem (fora do contêiner) que não usa nenhum estilo Bootstrap.
+            Observe que ela não muda de tamanho e será cortada.
+        </p>
+        <img src="img/osbaloes.jpg" alt="Turquia">
+    </div>
+
+    <br /><br />
+
+    <div class="margem15px">
+        <p>
+            A seguir, uma imagem (fora do contêiner) que usa o estilo Bootstrap img-responsive.
+            Observe que ela muda de tamanho e será redimensionada.
+        </p>
+        <img src="img/osbaloes.jpg" alt="Turquia" class="img-responsive">
+    </div>
+
+    <br /><br /><br /><br />
+
+</body></html>

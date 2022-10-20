@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Etapa 3</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .form2>button,
+        .form2>input,
+        #form {
+            width: 380px;
+            height: 25px;
+        }
+
+        .form2>select {
+            width: 380px;
+            height: 25px;
+
+        }
+
+        .form2>button,
+        #form3 {
+            background: linear-gradient(orange, rgb(232, 67, 67));
+            border: none;
+            color: white;
+            width: 388px;
+            height: 30px;
+            border-radius: 3px;
+        }
+
+        .form2>input,
+        .form2>select {
+            margin-bottom: 10px;
+            margin-top: 5px;
+            border: 1px solid rgb(182, 180, 180);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 0 auto;
+        }
+
+        h5, .cinza {
+            color: rgb(128, 127, 127);
+        }
+
+        .cinza{
+            padding-left: 27px;
+        }
+
+        .svgB {
+            width: 380px;
+
+        }
+
+        svg {
+            margin-top: 10px;
+            margin-left: 95px;
+        }
+
+        #check {
+            height: 13px;
+            width: 20px;
+        }
+
+        #check2 {
+            height: 15px;
+            width: 20px;
+            visibility: hidden;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(14, 187, 239);
+        }
+
+        #radio {
+            width: 15px;
+            height: 15px;
+        }
+
+        h4,
+        h3,
+        #linkAWS {
+            font-size: smaller;
+        }
+
+        h2 {
+            font-size: larger;
+        }
+
+        .form2>#check {
+            margin: 0;
+        }
+
+        #faq {
+            color: cyan;
+        }
+    </style>
+
+
+
+
+
+    <h1>Sign up for AWS</h1><br>
+
+    <h2>Billing information</h2><br>
+
+    Credit card number<br>
+
+    <input id="form" type="text"><br>
+
+    <img src="./imagens/payment-removebg-preview.png" width="200px">
+
+    <br> AWS accepts most major credit cards. To learn more <br>
+    about payment options, review our <a href="./">FAQ</a><br><br>
+
+
+    <form>
+        <h4>Expiration date</h4>
+
+        <select style="width: 192px; height: 30px;">
+            <optgroup label="">
+                <option>Month</option>
+            </optgroup>
+        </select>
+
+        <select style="width: 192px; height: 30px;">
+            <optgroup label="">
+                <option>Year</option>
+            </optgroup>
+        </select><br><br>
+
+        <h4>Cardholder's name</h4>
+
+        <input id="form" type="text">
+
+        <h4>Billing address</h4>
+
+        <input type="radio" id="radio"> Use my contact<br>
+            <div class="cinza">
+                Stanford Road <br>
+                Cape Town Western Cape 7700 <br>
+                ZA
+            </div>
+        <input type="radio" id="radio"> Use a new address<br><br>
+
+
+        <button id="form3"><b>Verify and Continue (step 3 of 5)</b></button>
+    </form>
+
+
+
+
+    <div class="svgB">
+        <a href="./form_etapa2.html">
+            <svg width="50" height="50" viewBox="0 0 512 512" aria-hidden="true" focusable="false" role="img"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor"
+                    d="M48.971,239.029c-9.373,9.373 -9.373,24.569 -0,33.942c39.485,39.485 137.607,137.607 183.13,183.13c4.003,4.003 10.025,5.201 15.257,3.034c5.231,-2.167 8.642,-7.272 8.642,-12.934c0,-42.564 0,-110.201 0,-110.201l180.036,0c3.173,0 6.216,-1.26 8.46,-3.504c2.244,-2.244 3.504,-5.287 3.504,-8.46l0,-136.072c0,-3.173 -1.26,-6.216 -3.504,-8.46c-2.244,-2.244 -5.287,-3.504 -8.46,-3.504l-180.036,0l0,-110.201c-0,-5.662 -3.411,-10.767 -8.642,-12.934c-5.232,-2.167 -11.254,-0.969 -15.257,3.034c-45.523,45.523 -143.645,143.645 -183.13,183.13Z" />
+            </svg>
+
+    </div>
+
+</body>
+
+</html>

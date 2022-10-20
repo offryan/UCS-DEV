@@ -1,0 +1,249 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+body{
+	margin: 0px;	
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 18pt;
+}
+
+#headerBlack{
+	font-family: 'Shojumaru', cursive;
+	background: -webkit-linear-gradient(top, #171717,#323232);
+	color: #fff;
+	height: 70px;
+	width: 100%;	
+	font-size: 26pt;
+	padding-top: 15px;
+}
+
+#headerBlue{
+	background: -webkit-linear-gradient(top, #0e3a85,#04152f);
+	height:150px;
+	width: 100%;
+	color: #fff;	
+	border-top: 1px #315fac solid;
+	padding-top: 50px;
+}
+
+#headerBlue h1, #headerBlue p, #headerBlack p{
+	width:960px;
+	margin: 10px auto;
+}
+
+#headerBlue p{
+	font-family: 'Dancing Script', cursive;
+	font-size: 18pt;
+	color: #b9d9ff;
+}
+
+main{
+	margin: 0 auto;
+	width: 960px;
+}
+
+nav a{
+	display: block;	
+	height:30px;
+	width: 250px;
+	color:#666;
+	border-bottom: 1px #ccc solid;
+	padding-top:10px;
+	text-decoration: none;
+}
+
+aside{
+	float:left;
+	width: 280px;
+}
+
+aside h3, h2{
+	font-family: 'Caveat', cursive;
+	color: #315fac;
+}
+
+#content{
+	width:680px;
+	float:left;
+	margin: 0px auto;
+}
+
+.news {
+	padding-left: 0px;
+}
+
+.news li{
+	margin-bottom: 20px;
+	list-style: none;
+	margin-left: 0px;
+	width: 250px;
+	text-align: justify;
+}
+
+p{
+	text-align: justify;
+}
+
+footer{
+	width: 960px;
+	margin: 0 auto;
+	clear:both;
+	margin-top:50px;
+	margin-bottom:50px;
+	border-top: 1px #ccc solid;
+	padding:20px;
+	color: #666;
+}
+
+footer div{
+	width:50%;
+	float:left;
+	text-align: center;
+}
+
+#redes{
+	width: 100%;
+	margin: 30px 0;
+}
+
+#redes a{
+	display: inline-block;	
+	text-align: center;
+	width: 100px;
+	text-decoration: none;
+	padding: 5px;
+	box-sizing: border-box;
+	transform: rotate(-30deg) skew(10deg);
+}
+
+#redes span{
+	position: absolute;    
+	width: 50px;	
+	height: 50px;
+    transition: 0.3s;
+    color: #fff;
+    font-size: 30px;
+	line-height: 50px;	
+}
+
+#redes a:hover span:nth-child(5){
+    transform: translate(20px, -20px);
+    opacity: 1;
+}
+
+#redes a:hover span:nth-child(4){
+	background-color: #000;
+    transform: translate(15px, -15px);
+    opacity: 0.8;
+}
+
+#redes a:hover span:nth-child(3){
+	background-color: #000;
+    transform: translate(10px, -10px);
+    opacity: 0.6;
+}
+
+#redes a:hover span:nth-child(2){
+	background-color: #000;
+    transform: translate(5px, -5px);
+    opacity: 0.4;
+}
+
+#redes a:hover span:nth-child(1){
+	background-color: #000;
+    transform: translate(0,0);
+    opacity: .2;
+}
+
+.fa-facebook{
+    background: #3b5999;
+}
+
+.fa-twitter{
+    background: #55acee;
+}
+
+.fa-linkedin{
+    background: #dd4b39;
+}
+
+.fa-instagram{
+    background: #0077b5;
+}
+
+
+#content figure{
+	float : left;
+	padding: 0;
+	margin: 10px;
+	width: 250px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+#content figure img{
+	width: 100%;
+	height: 100%;
+}
+
+#content figure:nth-child(1) img:hover{
+	animation: zoom 2s ;
+}
+
+#content figure:nth-child(2) img:hover{
+	animation: fadeIn 2s ;
+}
+
+#content figure:nth-child(3) figcaption{	
+	display: none;
+	height: 100%;
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#content figure:nth-child(3):hover figcaption {	
+	display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);	
+	animation: move .5s;
+}
+
+@keyframes zoom{
+	0%{
+		transform: scale(1);
+	}	
+	50%{
+		transform: scale(2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeIn{
+	0%{
+		opacity: 1;
+	}	
+	50%{
+		opacity: 0.3;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes move{
+	0%{
+		left: -100%;
+	}	
+	100%{
+		left: 0;
+	}
+}

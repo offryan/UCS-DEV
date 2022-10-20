@@ -1,0 +1,35 @@
+body{
+    background-color: #ccc;
+}
+
+.container{
+    background-color: rgb(107, 57, 11);
+    width: 600px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+
+h4,h1{
+    text-align: center;
+}
+
+
+form>input, form>textarea, form>select, table{
+    width: 380px;
+    height: 35px;
+    border-radius: 7px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+
+}
+
+table{
+    display: inline-block;
+}

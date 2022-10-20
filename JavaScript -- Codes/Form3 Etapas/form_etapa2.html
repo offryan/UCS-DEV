@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Etapa 2</title>
+</head>
+<body>
+    <style>
+        body{
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+       .form2>button , .form2>input{
+        width: 380px;
+        height: 25px;
+       }
+
+        .form2>select{
+        width: 380px;
+        height: 25px;
+
+       }
+
+       .form2>button{
+        background: linear-gradient(orange , rgb(232, 67, 67));
+        border: none;
+        color: white;
+        width: 388px;
+        height: 30px;
+        border-radius: 3px;
+       }
+
+       .form2>input , .form2>select{
+        margin-bottom: 10px;
+        margin-top: 5px;
+        border: 1px solid rgb(182, 180, 180);
+       }
+
+       h1, h2, h3, h4, h5{
+        margin: 0 auto;
+       }
+
+       h5{
+        color: rgb(128, 127, 127);
+       }
+
+       .svgB{
+        width: 380px;
+        
+       }
+
+       svg{
+       margin-top: 10px;
+       margin-left: 95px;
+       }
+
+       #check{
+        height: 13px;
+        width: 20px;
+       }
+
+       #check2{
+        height: 15px;
+        width: 20px;
+        visibility: hidden;
+       }
+
+       .blue{
+        color: blue;
+       }
+
+       a{
+        text-decoration: none;
+        color: rgb(14, 187, 239);
+       }
+
+       #radio{
+        width: 15px;
+        height: 15px;
+       }
+
+       h4, h3 , #linkAWS{
+        font-size: smaller;
+       }
+
+       h2{
+        font-size: larger;
+       }
+
+       .form2>#check{
+        margin: 0;
+       }
+
+    </style>
+
+<main id="formPag2">				
+    <div class="container">				
+            <form>							
+                <div class="form2">
+                    <h1>Sign up for AWS</h1><br>
+
+                    <br><h2><b>Contact information</b></h2><br>
+                    <h4>How do you plan to use AWS?</h4>
+
+                    <input type="radio" id="radio"> Busines - for your work, school, or <br> oraganization<br>
+                    <input type="radio" id="radio"> Personal - for your own projects<br><br>
+                    <h4>Who should we contact about this account?</h4><br>
+                    
+                    <h4>Full Name</h4>
+                    <input type="name" required>
+
+                    <h4>Phone Number</h4>
+                    <h5>Enter your country code and your phone number.</h5>
+
+                    <input type="number" placeholder="+1 222-333-4444" required>
+
+                    <h4>Country or Region</h4>
+                <select>
+                    <optgroup label="">
+                        <option>United States</option>
+                        <option>Brazil</option>
+                        <option>Argentina</option>
+                        <option>Canadá</option>
+                        <option>Japão</option>
+                    </optgroup>
+                </select>
+
+                    <h4>Address</h4>
+                    <input type="password" required><br>
+                    <input style="text-align: center;" type="password" placeholder="Apartment, suite, unite, building, floor, etc..."><br>
+
+                    
+                    <h4>City</h4>
+                    <input type="text" required><br>
+
+                    <h4>State, Province, or Region</h4>
+                    <input type="text" required><br>
+
+                    <h4>Postal Code</h4>
+                    <input type="text" required><br>
+                    
+                    <input type="checkbox" id="check" required> I have read and agree to the terms of the <br> <input type="checkbox" id="check2">
+                     <a id="linkAWS" href=""> AWS Custumer Agreement</a> <br><br>
+
+                    <button><b>Continue (step 2 of 5)</b></button>
+
+                </div>					
+            </form>
+
+
+
+
+
+    <div class="svgB">
+        <a href="./form_etapa1.html">
+            <svg width="50" height="50" viewBox="0 0 512 512" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M48.971,239.029c-9.373,9.373 -9.373,24.569 -0,33.942c39.485,39.485 137.607,137.607 183.13,183.13c4.003,4.003 10.025,5.201 15.257,3.034c5.231,-2.167 8.642,-7.272 8.642,-12.934c0,-42.564 0,-110.201 0,-110.201l180.036,0c3.173,0 6.216,-1.26 8.46,-3.504c2.244,-2.244 3.504,-5.287 3.504,-8.46l0,-136.072c0,-3.173 -1.26,-6.216 -3.504,-8.46c-2.244,-2.244 -5.287,-3.504 -8.46,-3.504l-180.036,0l0,-110.201c-0,-5.662 -3.411,-10.767 -8.642,-12.934c-5.232,-2.167 -11.254,-0.969 -15.257,3.034c-45.523,45.523 -143.645,143.645 -183.13,183.13Z"/></svg>
+
+        <a href="./form_etapa3.html">
+        <svg width="50" height="50" viewBox="0 0 512 512" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M463.029,239.029c9.373,9.373 9.373,24.569 0,33.942c-39.485,39.485 -137.607,137.607 -183.13,183.13c-4.003,4.003 -10.025,5.201 -15.257,3.034c-5.231,-2.167 -8.642,-7.272 -8.642,-12.934c0,-42.564 0,-110.201 0,-110.201l-180.036,0c-3.173,0 -6.216,-1.26 -8.46,-3.504c-2.244,-2.244 -3.504,-5.287 -3.504,-8.46l0,-136.072c-0,-3.173 1.26,-6.216 3.504,-8.46c2.244,-2.244 5.287,-3.504 8.46,-3.504l180.036,0l0,-110.201c0,-5.662 3.411,-10.767 8.642,-12.934c5.232,-2.167 11.254,-0.969 15.257,3.034c45.523,45.523 143.645,143.645 183.13,183.13Z"/></svg>
+
+        
+
+    </div>
+    </body>
+</html>

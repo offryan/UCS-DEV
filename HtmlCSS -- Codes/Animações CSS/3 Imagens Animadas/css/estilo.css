@@ -1,0 +1,86 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#container{
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    background-color: #f00;
+}
+
+figure{
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    margin-top:25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes anima1{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#fig1:hover{
+    animation: anima1 1s linear infinite alternate; 
+}
+
+
+@keyframes anima2{
+    0%{
+        opacity: 1;
+        transform: scale(1);        
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#fig2:hover{
+    animation: anima2 1s linear infinite alternate; 
+}
+
+@keyframes anima3{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+
+#fig3:hover{
+    animation: anima3 1s linear infinite alternate; 
+}

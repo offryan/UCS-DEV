@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>ExemploBasico_media.html</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        .coluna1,
+        .coluna2,
+        .coluna3 {
+            height: 300px;
+        }
+
+        /*
+           observe que para telas menores de 320px de largura
+           não existe uma especificação, então as divs terão comportamento
+           padrão, ocupando a largura do seu contêiner (body no exemplo)
+        */
+    
+        @media screen and (min-width: 320px) {
+            /* para telas a partir de 320px de largura */
+            .coluna1 {
+                background-color: green;
+            }
+
+            .coluna2 {
+                background-color: lime;
+            }
+
+            .coluna3 {
+                background-color: olive;
+            }
+        }
+
+        @media screen and (max-width: 780px) {
+            /* para telas até 780px de largura */
+            .coluna1,
+            .coluna2 {
+                float: left;
+                width: 50%;
+            }
+
+            .coluna3 {
+                clear: both;
+            }
+        }
+        
+        /*
+           observe que na faixa entre 780px e 1024px de largura
+           não existe uma especificação, então as divs terão comportamento
+           padrão, ocupando a largura do seu contêiner (body no exemplo)
+        */
+        
+        @media screen and (min-width: 1024px) {
+            /* para telas a partir de 1024px de largura */
+            .coluna1 {
+                float: left;
+                width: 30%;
+            }
+            .coluna2 {
+                float: left;
+                width: 60%;
+            }
+            .coluna3 {
+                float: left;
+                width: 10%;
+                clear: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+   <h2>Exemplo básico utilizando a regra @media</h2>
+    <div class="coluna1"></div>
+    <div class="coluna2"></div>
+    <div class="coluna3"></div>
+    
+    
+    
+    <div style="clear: both"> 
+        <br/><br/> &nbsp;&nbsp;&nbsp;  Veja a utilização da regra @media:
+    </div>
+    
+    <pre>
+        .coluna1,
+        .coluna2,
+        .coluna3 {
+            height: 300px;
+        }
+
+        /*
+           observe que para telas menores de 320px de largura
+           não existe uma especificação, então as divs terão comportamento
+           padrão, ocupando a largura do seu contêiner (body no exemplo)
+        */
+        
+        @media screen and (min-width: 320px) {
+            /* para telas a partir de 320px de largura */
+            .coluna1 {
+                background-color: green;
+            }
+
+            .coluna2 {
+                background-color: lime;
+            }
+
+            .coluna3 {
+                background-color: olive;
+            }
+        }
+
+        @media screen and (max-width: 780px) {
+            /* para telas até 780px de largura */
+            .coluna1,
+            .coluna2 {
+                float: left;
+                width: 50%;
+            }
+
+            .coluna3 {
+                clear: both;
+            }
+        }
+        
+        /*
+           observe que na faixa entre 780px e 1024px de largura
+           não existe uma especificação, então as divs terão comportamento
+           padrão, ocupando a largura do seu contêiner (body no exemplo)
+        */
+        
+        @media screen and (min-width: 1024px) {
+            /* para telas a partir de 1024px de largura */
+            .coluna1 {
+                float: left;
+                width: 30%;
+            }
+            .coluna2 {
+                float: left;
+                width: 60%;
+            }
+            .coluna3 {
+                float: left;
+                width: 10%;
+                clear: none;
+            }
+        }    
+    </pre>
+    
+</body>
+
+</html>

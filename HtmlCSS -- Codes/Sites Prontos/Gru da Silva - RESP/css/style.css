@@ -1,0 +1,529 @@
+body {
+ margin: 0;
+}
+a:hover,
+a:active {
+ outline: 0;
+}
+figure {
+ margin: 0;
+}
+*{
+ box-sizing: border-box;
+}
+body {
+ font-family: "Open Sans", Arial, sans-serif;
+ font-size: 16px;
+ line-height: 1.7;
+ background-color: #f2efdc;
+ color: #898670;
+}
+a {
+ text-decoration: none;
+ color: #f16a54;
+}
+header {
+ text-align: center;
+ background: white;
+}
+header nav a {
+ display: inline-block;
+ margin: 30px 0px;
+ padding: 0px 20px;
+ color: #9d9879;
+ border-bottom: 2px solid transparent;
+ transition: .3s ease;
+ border-right: 1px solid #9d9879;
+}
+header nav :last-child {
+ border-right: none;
+}
+header nav a:hover{
+ color: #f16a54;
+ border-bottom: 2px solid #f16a54;
+}
+header .container{
+ display: flex;
+}
+1
+header .container .geral{
+ width: 50%;
+ text-align: right;
+}
+header .container #logo {
+ width: 50%;
+}
+header .container #logo a{
+ display: flex;
+ align-items: center;
+}
+header .container #logo a i{
+ font-size: 40pt;
+ margin-right: 20px;
+}
+.home{
+ display: none;
+}
+#homenav{
+ width: 100%;
+ text-align: center;
+}
+.container {
+ margin: 0px auto;
+ padding: 0px 15px;
+}
+footer {
+ text-align: center;
+ padding: 50px 0;
+ background-color: white;
+ color: #9d9879;
+}
+footer .logo {
+ font-size: 60px;
+ color: #e1dece;
+}
+footer nav {
+ padding: 30px 0;
+}
+footer nav a {
+ display: inline-block;
+ padding: 0 20px;
+ color: #9d9879;
+ border-right: 1px solid #9d9879;
+ font-size: 14px;
+}
+2
+footer nav a:last-child{
+ border-right: none;
+}
+footer form {
+ position: relative;
+ display: inline-block;
+ width: 50%;
+}
+footer form input {
+ outline: none;
+}
+footer form input[type="text"] {
+ width: 100%;
+ padding: 15px 20px;
+ border-radius: 25px;
+ border: 3px solid #e1dece;
+ font-size: 14px;
+ transition: .3s ease;
+}
+footer form input[type="text"]:focus,
+footer form input[type="text"]:active {
+ border-color: #f16a54;
+}
+form #insc {
+ position: absolute;
+ right: 6px;
+ top: 6px;
+ background-color: #f16a54;
+ color: #f2efdc;
+ padding: 12px 20px;
+ border-radius: 20px;
+ border: none;
+ font-size: 14px;
+}
+footer #redes {
+ padding: 30px 0;
+}
+footer #redes a {
+ color: white;
+ text-align: center;
+ line-height: 1.9;
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ display: inline-block;
+ margin: 0 5px;
+ font-size: 26px;
+}
+3
+footer #redes .facebook {
+ background-color: #3b5a9b;
+}
+footer #redes .twitter {
+ background-color: #1c9ac7;
+}
+footer #redes .pinterest {
+ background-color: #d11e2e;
+}
+.biografia {
+ padding: 100px 0;
+}
+.biografia .container{
+ display: flex;
+}
+.biografia .container div, .biografia .container figure{
+ width: 50%;
+ margin: 50px;
+}
+.biografia figure {
+ background-color: #fff;
+ border: 10px solid white;
+ margin-bottom: 30px;
+}
+.biografia figure img {
+ max-width: 100%;
+ width: auto;
+ height: 100%;
+}
+.biografia h2 {
+ font-weight: 100;
+ font-size: 48px;
+ margin: 0 0 30px;
+ color: #736f5c;
+}
+.biografia .detail {
+ list-style: none;
+ margin: 30px 0;
+ padding: 0;
+}
+.biografia .detail li {
+ margin-bottom: 20px;
+}
+.biografia .icon {
+ width: 40px;
+ height: 40px;
+4
+ background-color: #f16a54;
+ border-radius: 50%;
+ text-align: center;
+ display: inline-block;
+ margin-right: 20px;
+ padding: 5px 0px;
+ color: #fff;
+}
+#contato {
+ padding: 100px 0;
+}
+.title {
+ font-weight: 300;
+ font-size: 48px;
+ color: #736f5c;
+ margin-top: 0;
+ margin-bottom: 30px;
+}
+.contato-detalhes {
+ display: flex;
+ justify-content: center;
+ border-radius: 30px;
+ padding: 20px;
+ border: 3px solid #e1dece;
+ text-align: center;
+ margin-bottom: 30px;
+}
+.contato-detalhes span {
+ margin-right: 10px;
+}
+.contato-detalhes .local, .contato-detalhes .email, .contatodetalhes .cel {
+ margin-right: 40px;
+}
+#contato form {
+ display: flex;
+}
+#contato form .col{
+ width: 50%;
+ margin: 10px;
+ text-align: right;
+}
+#contato form input,#contato form textarea {
+ width: 100%;
+ padding: 20px;
+ border-radius: 20px;
+ background-color: white;
+ font-size: 14px;
+ border: 2px solid white;
+5
+ margin-bottom: 20px;
+ outline: none;
+ transition: .3s ease;
+}
+#contato form input:hover,#contato form input:focus,#contato
+form textarea:hover,
+#contato form textarea:focus {
+ border-color: #f16a54;
+}
+#contato form textarea {
+ height: 220px;
+}
+#contato form button {
+ background-color: #f16a54;
+ color: #f2efdc;
+ padding: 15px 30px;
+ border-radius: 30px;
+ border: none;
+ outline: none;
+}
+#servicos{
+ display: flex;
+ padding-top: 20px;
+}
+#servicos article {
+ text-align: center;
+}
+#servicos article .serv-icon {
+ width: 250px;
+ height: 250px;
+ border-radius: 50%;
+ margin-bottom: 20px;
+ display: inline-block;
+}
+#servicos article .serv-icon {
+ font-size: 100px;
+ color: #f2efdc;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+#servicos article .serv-title {
+ font-size: 24px;
+ margin: 0 0 10px;
+}
+.purple .serv-icon {
+ background-color: #48172d;
+}
+6
+.purple .serv-title {
+ color: #48172d;
+}
+.green .serv-icon {
+ background-color: #889c29;
+}
+.green .serv-title {
+ color: #889c29;
+}
+.pink .serv-icon {
+ background-color: #f16a54;
+}
+.pink .serv-title {
+ color: #f16a54;
+}
+.orange .serv-icon {
+ background-color: #fbab18;
+}
+.orange .serv-title {
+ color: #fbab18;
+}
+.lista-receitas {
+ margin-top: 50px;
+}
+.receita {
+ background-color: white;
+ padding: 15px;
+ border-radius: 150px;
+ margin-bottom: 30px;
+ display: flex;
+ align-items: center;
+}
+.receita figure {
+ width: 25%;
+ margin-right: 45px;
+ border-radius: 150px;
+}
+.receita figure img {
+ width: 100%;
+ border-radius: 150px;
+}
+.receita .receita-detalhes{
+ width: 70%;
+}
+7
+.receita .time, .receita .calorie, .receita .comment {
+ margin-right: 15px;
+}
+#person{
+ padding: 90px 0px;
+ text-align: center;
+}
+#person .logo {
+ font-size: 60px;
+ color: #f16a54;
+}
+#person .site-title {
+ font-size: 60px;
+ color: #736f5c;
+ padding: 30px 0;
+}
+#person .site-description {
+ font-size: 24px;
+ color: #9d9879;
+}
+#cooking-section article,
+#vegetables-section article,
+#fruits-section article,
+#restaurant-section article{
+ display: flex;
+ padding: 50px;
+ align-items: center;
+}
+#cooking-section article figure,
+#vegetables-section article figure,
+#fruits-section article figure,
+#restaurant-section article figure{
+ padding-right: 50px;
+}
+#cooking-section article .conteudo,
+#vegetables-section article .conteudo,
+#fruits-section article .conteudo,
+#restaurant-section article .conteudo{
+ padding-left: 50px;
+}
+#cooking-section{
+ background-color: #48172d;
+ color: #c09ead;
+}
+#restaurant-section {
+ background-color: #fbab18;
+ color: #96591d;
+}
+8
+#fruits-section {
+ color: #898670;
+}
+#vegetables-section {
+ background-color: #879c29;
+ color: #f2efdc;
+}
+.button {
+ padding: 10px 20px;
+ border-radius: 20px;
+ display: inline-block;
+ font-weight: 500;
+ color: white;
+ font-size: 14px;
+ font-size: 0.875rem;
+}
+#cooking-section .button {
+ background-color: #fbab18;
+ color: #48172d;
+}
+#restaurant-section .button {
+ background-color: #48172d;
+ color: #fbab18;
+}
+#fruits-section .button {
+ background-color: #879c29;
+ color: #f2efdc;
+}
+#vegetables-section .button {
+ background-color: #f2efdc;
+ color: #879c29;
+}
+@media (min-width: 1200px) {
+ .container {
+ width: 1170px;
+ }
+}
+@media screen and (max-width:800px) {
+ header .container{
+ flex-direction: column;
+ }
+
+ header .container #logo{
+ width: 100%;
+ }
+ header .container #logo a{
+ justify-content: center;
+9
+ }
+ .home{
+ display: block;
+ width: 100%;
+ }
+ header nav a {
+ padding: 0px 5px;
+ }
+ footer form {
+ width: 100%;
+ }
+ footer nav a {
+ padding: 0 10px;
+ }
+
+ .biografia{
+ padding: 10px 8px;
+ }
+ .biografia .container{
+ flex-direction: column;
+ }
+
+ .biografia .container div, .biografia .container figure{
+ width: 100%;
+ margin: 0px;
+ }
+ .biografia figure{
+ width: 100%;
+
+ }
+ .biografia figure img {
+ width: 100%;
+ }
+ #contato form {
+ flex-direction: column;
+ }
+ #contato form .col{
+ width: 100%;
+ margin: 0px;
+ text-align: center;
+ }
+ .contato-detalhes{
+ flex-direction: column;
+ }
+ .contato-detalhes .local, .contatodetalhes .email, .contato-detalhes .cel {
+10
+ margin-right: 0px;
+ }
+ #servicos{
+ flex-direction: column;
+ }
+ .serv-icon{
+ display: block;
+ margin: auto;
+ }
+ .receita {
+ flex-direction: column;
+ justify-content: center;
+ border-radius: 10px;
+ }
+ .receita figure{
+ width: 80%;
+ margin-right: 0px;
+ }
+ .receita .receita-detalhes{
+ width: 100%;
+ }
+ .receita .receita-meta{
+ display: flex;
+ flex-direction: column;
+ }
+ #cooking-section article,
+ #vegetables-section article,
+ #fruits-section article,
+ #restaurant-section article{
+ flex-direction: column;
+ padding: 10px;
+ }
+ #cooking-section article figure,
+ #vegetables-section article figure,
+ #fruits-section article figure,
+ #restaurant-section article figure{
+ padding: 5px;
+ }
+ #cooking-section article .conteudo,
+ #vegetables-section article .conteudo,
+ #fruits-section article .conteudo,
+ #restaurant-section article .conteudo{
+ padding: 5px;
+ }
+ #cooking-section article figure img,
+ #vegetables-section article figure img,
+ #fruits-section article figure img,
+11
+ #restaurant-section article figure img{
+ width: 100%;
+ }
+}

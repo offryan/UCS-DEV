@@ -1,0 +1,17 @@
+form {
+    padding-top: 60px;
+    width: 200px;
+    margin: auto;
+}
+
+input {
+    width: 200px;
+    margin: 10px 0px;
+    height: 30px;
+    border: 0.5 #000 solid;
+}
+
+label {
+    font-family: verdana;
+    font-size: 20px;
+}
