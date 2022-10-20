@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package programadesejacontiunuar_comdo;
-
-/**
- *
- * @author logon
- */
 public class ProgramaDesejaContiunuar_comDO {
 
   public static void main(String[] args) {
