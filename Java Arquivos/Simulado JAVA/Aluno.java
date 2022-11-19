@@ -40,6 +40,3 @@ public abstract class Aluno {
         this.CPF = CPF;
     }
 }
-
-
-    
